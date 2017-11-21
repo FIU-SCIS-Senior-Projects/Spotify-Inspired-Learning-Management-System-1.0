@@ -902,6 +902,19 @@ pre code {
   margin-right: 5px;
 }
 
+.row-left{
+  margin-left: auto;
+  margin-left: 150px;
+  margin-right:40%;
+}
+
+.row-right{
+  margin-left: auto;
+  margin-top:-225px;
+  margin-left: 65%;
+  margin-right: 2px;
+}
+
 .col-xs-1,
 .col-sm-1,
 .col-md-1,
@@ -4531,6 +4544,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 20px;
 }
 
+.navbar-top{
+  margin-top:-30px;
+  margin-right:5px;
+}
+
+
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
@@ -4691,6 +4710,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-right: 0;
   }
 }
+
+
 
 
 /*SIDE-NAV ADDED STARTS HERE-------------------------------------------------------------------------------------------*/

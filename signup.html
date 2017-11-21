@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ScratchBoard - Sign Up Form</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/sb-admin.css" rel="stylesheet">
+
+  <!--Font Amazing link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="container"><div class="row">
+        <h1 class="page-header"> Sign-up Form </h1>
+    </div></div>
+	
+	<div class="container"><div class="row">
+
+      <form name="signup-form" class="well form-horizontal" action="add_client.php" method="post"  id="contact_form">
+  <fieldset>
+
+  <!-- Form Name -->
+  <legend>Personal Information</legend>
+
+  <!-- First name field -->
+  <div class="form-group">
+    <label class="col-md-4 control-label">First Name</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+    <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+      </div>
+    </div>
+  </div>
+
+  <!-- Last name field -->
+  <div class="form-group">
+    <label class="col-md-4 control-label">Last Name</label> 
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+    <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Email field -->
+         <div class="form-group">
+    <label class="col-md-4 control-label">Email</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+    <input name="email" placeholder="Email Address" class="form-control"  type="text">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Major -->
+  <div class="form-group">
+    <label class="col-md-4 control-label">Major</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+    <input name="major" placeholder="Address" class="form-control" type="text">
+      </div>
+    </div>
+  </div>
+
+  <!-- Year -->
+   <div class="form-group">
+      <label class="col-md-4 control-label">What type of home do you live in?</label>
+          <div class="col-md-4">
+          <div class="radio"> <label><input type="radio" name="year" value="Freshman" /> Freshman </label></div>
+          <div class="radio"><label><input type="radio" name="year" value="Sophomore" /> Sophomore </label></div>
+		  <div class="radio"><label><input type="radio" name="year" value="Junior" /> Junior </label></div>
+		  <div class="radio"><label><input type="radio" name="year" value="Senior" /> Senior </label></div>
+          </div>
+   </div>
+  
+  <!-- Intro -->
+  <div class="form-group">
+    <label class="col-md-4 control-label">Profile Intro</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+    <input name="intro" placeholder="Address" class="form-control" type="text">
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Password field -->
+         <div class="form-group">
+    <label class="col-md-4 control-label">Password</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+    <input name="password" placeholder="Password" class="form-control"  type="password">
+      </div>
+    </div>
+  </div>
+  
+  <legend>Courses</legend>
+  
+  <!-- 1st Course Code-->
+  <div class="form-group">
+    <label class="col-md-4 control-label">What is the course code of your 1st class?</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+    <input name="course_1" placeholder="EXA 1234" class="form-control" type="text">
+      </div>
+    </div>
+  </div>
+
+  <!-- 1st Course Name-->
+  <div class="form-group">
+    <label class="col-md-4 control-label">What is the name of your 1st class?</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+    <input name="course1_name" placeholder="example" class="form-control" type="text">
+      </div>
+    </div>
+  </div>
+
+<br>  
+  
+  <!-- 2nd Course Code-->
+  <div class="form-group">
+    <label class="col-md-4 control-label">What is the course code of your 2nd class?</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-book"></i></span>
+    <input name="course_2" placeholder="EXA 1234" class="form-control" type="text">
+      </div>
+    </div>
+  </div>
+
+  <!-- 2nd Course Name-->
+  <div class="form-group">
+    <label class="col-md-4 control-label">What is the name of your 2nd class?</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-book"></i></span>
+    <input name="course2_name" placeholder="example" class="form-control" type="text">
+      </div>
+    </div>
+  </div>
+ 
+<br> 
+ 
+  <!-- 3rd Course Code-->
+  <div class="form-group">
+    <label class="col-md-4 control-label">What is the course code of your 3rd class?</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-book"></i></span>
+    <input name="course_3" placeholder="EXA 1234" class="form-control" type="text">
+      </div>
+    </div>
+  </div>
+
+  <!-- 3rd Course Name-->
+  <div class="form-group">
+    <label class="col-md-4 control-label">What is the name of your 3rd class?</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-book"></i></span>
+    <input name="course3_name" placeholder="example" class="form-control" type="text">
+      </div>
+    </div>
+  </div>
+ 
+ <br>
+ 
+   <!-- 4th Course Code-->
+  <div class="form-group">
+    <label class="col-md-4 control-label">What is the course code of your 4th class?</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-book"></i></span>
+    <input name="course_4" placeholder="EXA 1234" class="form-control" type="text">
+      </div>
+    </div>
+  </div>
+
+  <!-- 4th Course Name-->
+  <div class="form-group">
+    <label class="col-md-4 control-label">What is the name of your 4th class?</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-book"></i></span>
+    <input name="course4_name" placeholder="example" class="form-control" type="text">
+      </div>
+    </div>
+  </div>
+ 
+ <br>
+ 
+   <!-- 5th Course Code-->
+  <div class="form-group">
+    <label class="col-md-4 control-label">What is the course code of your 5th class?</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-book"></i></span>
+    <input name="course_5" placeholder="EXA 1234" class="form-control" type="text">
+      </div>
+    </div>
+  </div>
+
+  <!-- 5th Course Name-->
+  <div class="form-group">
+    <label class="col-md-4 control-label">What is the name of your 5th class?</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-book"></i></span>
+    <input name="course5_name" placeholder="example" class="form-control" type="text">
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Button -->
+  <div class="form-group">
+    <label class="col-md-4 control-label"></label>
+    <div class="col-md-4">
+      <button type="submit" class="btn btn-primary" >Submit <span class="fa fa-send"></span></button>
+	  <a href="signup.html" class="btn btn-warning" role="button">Reset</a>
+      <a href="index.php" class="btn btn-danger" role="button">Cancel</a>
+    </div>
+  </div>
+
+  </fieldset>
+  </form>
+  </div>
+      </div></div><!-- /.container -->
+	  
+<!-- JavaScripts -->
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>
