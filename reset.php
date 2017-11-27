@@ -30,28 +30,43 @@ else {
 <head>
   <meta charset="UTF-8">
   <title>Reset Your Password</title>
+  
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/sb-admin.css" rel="stylesheet">
+
+  <!--Font Amazing link-->
+   <!--Font Amazing link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <?php include 'css/css.html'; ?>
 </head>
 
 <body>
     <div class="form">
-
-          <h1>Choose Your New Password</h1>
-          
+ <div id="login-wrapper">
+    <div class="login-panel panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Choose Your New Password</h3>
+      </div>
+      <div class="panel-body">
+    
           <form action="reset_password.php" method="post">
               
           <div class="field-wrap">
             <label>
               New Password<span class="req">*</span>
             </label>
-            <input type="password"required name="newpassword" autocomplete="off"/>
+            <input type="password"required name="newpassword" input class="form-control" autocomplete="off"/>
           </div>
               
           <div class="field-wrap">
             <label>
               Confirm New Password<span class="req">*</span>
             </label>
-            <input type="password"required name="confirmpassword" autocomplete="off"/>
+            <input type="password" required name="confirmpassword" input class="form-control" autocomplete="off"/>
           </div>
           
           <!-- This input field is needed, to get the email of the user -->
@@ -63,6 +78,9 @@ else {
           </form>
 
     </div>
+		</div>
+			</div>
+				</div>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="js/index.js"></script>
 

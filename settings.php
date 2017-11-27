@@ -2,45 +2,21 @@
 /* Displays user information and some useful messages */
 session_start();
 
-// Check if user is logged in using the session variable
-
+// Check if user is  still logged
+      if(!isset($_SESSION['logged_in'])){ 
+      header("Location: index.php");  
+	  }
    //user name and email
     $first_name = $_SESSION['first_name'];
     $last_name = $_SESSION['last_name'];
     $email = $_SESSION['email'];
-  
-  //courses user is taking	
-    $course1 = $_SESSION['course_1']; 
-    $course2 = $_SESSION['course_2'];
-	$course3 = $_SESSION['course_3'];
-	$course4 = $_SESSION['course_4'];
-	$course5 = $_SESSION['course_5'];
-
-   //1st course info	
-	$course1_name = $_SESSION["course1_name"];
-	$course1_due_date = $_SESSION["course1_due_date"];
-	
-   //2nd course info	
-	$course2_name = $_SESSION["course2_name"];
-	$course2_due_date = $_SESSION["course2_due_date"];
-	
-   //3rd course info
-   	$course3_name = $_SESSION["course3_name"];
-	$course3_due_date = $_SESSION["course3_due_date"];
-   
-   //4th course info
-   	$course4_name = $_SESSION["course4_name"];
-	$course4_due_date = $_SESSION["course4_due_date"];
-   
-   //5th course info
-	$course5_name = $_SESSION["course5_name"];
-	$course5_due_date = $_SESSION["course5_due_date"];
 	
 	//Following and Followers
 	$following = $_SESSION['following'];
-	//$followers = $_SESSION['followers'];
-		
-   
+	$followers = $_SESSION['followers'];
+	
+
+
 ?>
 
 <!DOCTYPE html>
@@ -58,7 +34,7 @@ session_start();
   <link href="css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Custom CSS -->
-  <link href="css/sb-admin.css" media="screen" rel="stylesheet" />
+  <link href="css/scratchboard.css" media="screen" rel="stylesheet" />
 
   
   <!--Font Amazing link-->
@@ -129,7 +105,7 @@ session_start();
             </a>
           </li>
           <li>
-            <a href="index.php" data-toggle="tooltip" data-placement="right" title="Log Out" data-original-title="Home">
+            <a href="logout.php" data-toggle="tooltip" data-placement="right" title="Log Out" data-original-title="Home">
               <i class="fa fa-power-off fa-3x"></i>
             </a>
           </li>
@@ -146,21 +122,10 @@ session_start();
         <div class="col-lg-12">
       <h4 class = "subText">Privacy Settings</h2>
 
-      <p><small>Allow public to view your Email: </small></p>
-      <div class="onoffswitch">
-        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch1" checked>
-        <label class="onoffswitch-label" for="switch1">
-          <span class="onoffswitch-inner"></span>
-          <span class="onoffswitch-switch"></span>
-        </label>
-      </div>
-
-	  <br>
-	  <br>
 	  
       <p><small>Allow others to view your Posts:</small></p>
       <div class="onoffswitch">
-        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch2" checked>
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch2">
         <label class="onoffswitch-label" for="switch2">
           <span class="onoffswitch-inner"></span>
           <span class="onoffswitch-switch"></span>
@@ -194,14 +159,6 @@ session_start();
 	  	  <br>
 	  <br>
 	  
-      <p><small>Allow others to view your Activites:</small></p>
-      <div class="onoffswitch">
-        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch5" checked>
-        <label class="onoffswitch-label" for="switch5">
-          <span class="onoffswitch-inner"></span>
-          <span class="onoffswitch-switch"></span>
-        </label>
-      </div>
 
   </div>
     </div>
@@ -225,11 +182,11 @@ session_start();
     <div class="footer-left">
 
       <p class="footer-links">
-        <a href="#">Home</a> 
+        <a href="home.php">Home</a> 
 		·
-        <a href="#">FAQ</a> 
+        <a href="FAQ.php">FAQ</a> 
 		·
-        <a href="#">Contact</a>
+        <a href="FAQ.php">Contact</a>
       </p>
 
       <p>ScratchBoard &copy; 2017-2018</p>

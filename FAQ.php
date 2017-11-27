@@ -46,6 +46,8 @@ session_start();
   <link href="css/demo.css" media="screen" rel="stylesheet" />
   <link href="theme/profile.css" media="screen" rel="stylesheet" />
   
+    <!-- Custom CSS -->
+  <link href="css/modern-business.css" rel="stylesheet">
   
   <!--Font Amazing link-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -59,7 +61,6 @@ session_start();
   <script type="text/javascript" src="daterangepicker.js"></script>
   <link rel="stylesheet" type="text/css" href="daterangepicker.css" />
 
-  
   
 	
   
@@ -101,7 +102,7 @@ session_start();
               <i class="fa fa-home fa-3x" data-toggle="tooltip" data-placement="right" title="Home" data-original-title="Home"></i>
             </a>
           </li>
-          <li class="active">
+          <li>
             <a href="profile.php">
               <i class="fa fa-user fa-3x" data-toggle="tooltip" data-placement="right" title="Profile" data-original-title="Profile"></i>
             </a>
@@ -141,85 +142,124 @@ session_start();
   <div id="move-wrapper">
     <div id="page-wrapper">
       
-  <!--Start of Upper profile************************************************************************************************************ -->
-  <div class="container">
-    <div class="row">    
-        <a class="twPc-bg twPc-block"></a>
-        <div>
-          <div class="twPc-button">
-            <a href="#" class="btn btn-info">Follow</a>
-          </div>
 
-
-          <div class="twPc-avatarLink">
-			<?
-//$Query="SELECT * FROM users";
-// Write mysql query to fetch $Query     <--used to pull image from folder through php
-
-?>
-
-<img class="img-circle img-user" width="170" height="170">
-
-
-
-          </div>
-          <div class="twPc-divUser">
-            <div class="twPc-divName">
-              <p><?=$first_name?> <?=$last_name?> </p>
+	  
+	  <!-- Panel start-->
+	  <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Contact Info</a>
+              </h4>
             </div>
-            
-			<div class = "emailPosition">
-				<p class = "majornYear"><?=$major?> | <?=$year?></p>
-
-			</div>
-			<div class = "intro">
-				<p class = "introLine"><?=$intro?> <a href="editProfile.php" 
-				class="fa fa-pencil-square-o" data-toggle="tooltip" data-placement="right" title="Edit Profile" data-original-title="Edit Profile"></a>
-						
-		  </p>
-		 
-          
-			</div>			
+            <div id="collapseOne" class="panel-collapse collapse">
+              <div class="panel-body">
+                Feel free to contact us at: scratchboard@gmail.com (Note: email is not up and running please refrain from using it)
+              </div>
+            </div>
           </div>
-
-          <div class="twPc-divStats">
-            
-              <li class="twPc-ArrangeSizeFit">
-                <a>
-                <span class="twPc-StatLabel twPc-block">Following</span>
-                  <span class="twPc-StatValue"><?=$following?></span>
-                </a>
-              </li>
-              <li class="twPc-ArrangeSizeFit">
-                <a>
-                  <span class="twPc-StatLabel twPc-block">Followers</span>
-                  <span class="twPc-StatValue"><?=$followers?></span>
-                </a>
-              </li>
-           
+      <!-- /.panel end -->
+	  
+	  <!-- Panel start-->
+	  <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">How to delete to-do tasks?</a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+               Click on the check mark to mark the task complete, then click the close icon, warning all things marked complete will be deleted
+              </div>
+            </div>
           </div>
-        </div>
+      <!-- /.panel end -->	  
+	  
+	  	  <!-- Panel start-->
+	  <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+				Why does the search bar not work?</a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+               Sorry that part is under construction.
+              </div>
+            </div>
+          </div>
+      <!-- /.panel end -->
+	  
+	  
+	  
+	  	  <!-- Panel start-->
+	  <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+				I want to delete my account how can I do that?</a>
+              </h4>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+              <div class="panel-body">
+               If you are a part of the testing process please make a note of it in your form and we will delete it.
+              </div>
+            </div>
+          </div>
+      <!-- /.panel end -->
+	  
+	  	  <!-- Panel start-->
+	  <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+				When I edit my profile, the changes aren't shown on my profile</a>
+              </h4>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse">
+              <div class="panel-body">
+                The site is still under construction, so not all the parts working.
+              </div>
+            </div>
+          </div>
+      <!-- /.panel end -->
 
-      <!-- code end -->
-    </div>
-  </div>
+	  	  <!-- Panel start-->
+	  <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+				I forgot my password but I didn't get an email to change it</a>
+              </h4>
+            </div>
+            <div id="collapse6" class="panel-collapse collapse">
+              <div class="panel-body">
+                The site is still under construction, so not all the parts are working.
+              </div>
+            </div>
+          </div>
+      <!-- /.panel end -->	  
+	  
+	  	  	  <!-- Panel start-->
+	  <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+				Why does the messaging/archives pages not work?</a>
+              </h4>
+            </div>
+            <div id="collapse7" class="panel-collapse collapse">
+              <div class="panel-body">
+                The site is still under construction, so not all the parts work
+              </div>
+            </div>
+          </div>
+      <!-- /.panel end -->
+<!--Start of Footer -->
 
-  <!--End of Upper profile************************************************************************************************************** -->
-<br>
-<h5 class="subText">Featured Posts</h5><br><br>
-<h5 class="subText">Recently Added</h5><br>
-<h5 class="subText">Activities</h5>
-
-</div>
-</div>
-
-
-
-
-
-<!--Start of Footer -->  
+  <br><br><br>
   <footer class="footer">
-   <hr>
+  <hr>
 <div class="footer-right">
 
       <a><i class="fa fa-facebook"></i></a>
@@ -243,8 +283,16 @@ session_start();
 	  <br>
     </div>
     </footer>
-<!--End of Footer-->		
-  <!-- /#wrapper -->
+<!--End of Footer-->	
+	
+</div>
+</div>
+
+
+
+
+
+
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
   <script src="js/todoFunctions.js"></script>

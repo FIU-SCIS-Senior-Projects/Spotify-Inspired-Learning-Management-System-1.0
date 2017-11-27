@@ -59,7 +59,7 @@ session_start();
   <link href="css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Custom CSS -->
-  <link href="css/sb-admin.css" media="screen" rel="stylesheet" />
+  <link href="css/scratchboard.css" media="screen" rel="stylesheet" />
   <link href="css/demo.css" media="screen" rel="stylesheet" />
   <link href="css/todo.css" media="screen" rel="stylesheet" />
 
@@ -536,9 +536,9 @@ session_start();
       <p class="footer-links">
         <a href="home.php">Home</a> 
 		·
-        <a href="FAQ.html">FAQ</a> 
+        <a href="FAQ.php">FAQ</a> 
 		·
-        <a href="#">Contact</a>
+        <a href="FAQ.php">Contact</a>
       </p>
 
       <p>ScratchBoard &copy; 2017-2018</p>

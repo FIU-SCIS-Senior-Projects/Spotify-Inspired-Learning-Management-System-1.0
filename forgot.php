@@ -49,53 +49,32 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' )
 <head>
   <title>Reset Your Password</title>
   <?php include 'css/css.html'; ?>
-
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link href="css/sb-admin.css" rel="stylesheet">
-
-  <!--Font Amazing link-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <?php include 'css/css.html'; ?>
 </head>
 
 <body>
-    
-<div id="login-wrapper">
-
+<div class="form">
+ <div id="login-wrapper">
     <div class="login-panel panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">Reset Your Password</h3>
+        <h3 class="panel-title">Reset Your Password</</h3>
       </div>
-      <div class="panel-body">
+      <div class="panel-body"> 
 
-  <div class="form">      
-         <div id="login">             
-           <form action="forgot.php" method="post">
-            <div class="field-wrap">
-            <label>Email Address<span class="req">*</span></label>
-			<br>
-             <input type="email"required autocomplete="off" name="email"/>
-          </div>
-          <br>
-          <button class="btn btn-lg btn-success btn-block"/>Reset</button>
-          </form>
-
-        </div>
-		</div>
-		</div>
-		</div>
-		</div>	
+    <form action="forgot.php" method="post">
+     <div class="field-wrap">
+	 <br>
+      <label>Email Address<span class="req">*</span>
+      </label>
+      <input type="email"required autocomplete="off" input class="form-control" name="email"/>
+    </div>
 	
-	
-	
-	
-	
-	
-
+	<br><br>
+    <button class="btn btn-lg btn-success btn-block"/>Reset</button>
+    </form>
+</div>
+</div>
+</div>
+</div>
           
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="js/index.js"></script>
