@@ -28,7 +28,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' )
 
         // Send registration confirmation link (reset.php)
         $to      = $email;
-        $subject = 'Password Reset Link ( clevertechie.com )';
+        $subject = 'Password Reset Link ( scratchboard.co )';
         $message_body = '
         Hello '.$first_name.',
 
@@ -36,7 +36,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' )
 
         Please click this link to reset your password:
 
-        http://localhost/login-system/reset.php?email='.$email.'&hash='.$hash;  
+        http://scratchboard.co/reset.php?email='.$email.'&hash='.$hash;  
 
         mail($to, $subject, $message_body);
 
@@ -48,11 +48,19 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' )
 <html>
 <head>
   <title>Reset Your Password</title>
+    <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/scratchboard.css" rel="stylesheet">
+
+  <!--Font Amazing link-->
+   <!--Font Amazing link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <?php include 'css/css.html'; ?>
 </head>
 
 <body>
-<div class="form">
  <div id="login-wrapper">
     <div class="login-panel panel panel-default">
       <div class="panel-heading">
@@ -67,11 +75,11 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' )
       </label>
       <input type="email"required autocomplete="off" input class="form-control" name="email"/>
     </div>
-	
-	<br><br>
+	<p class="cancel"><a href="index.php">Cancel</a></p>
+	<br>
     <button class="btn btn-lg btn-success btn-block"/>Reset</button>
     </form>
-</div>
+	
 </div>
 </div>
 </div>
